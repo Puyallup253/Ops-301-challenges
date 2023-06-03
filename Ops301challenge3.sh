@@ -17,7 +17,7 @@ read -p "Enter the permissions number: " permissions_number
 #Navigates to the directory input by the user and changes all files inside it to the input setting.
 
 
-chmod $permissions_number $directory_path/*
+chmod -R $permissions_number $directory_path 
 
 #Prints to the screen the directory contents and the new permissions settings of everything in the directory.
 echo "${directory_path} has new permissions of ${permissions_number}"
